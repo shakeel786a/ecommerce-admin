@@ -19,6 +19,7 @@ import { sygnet } from "src/assets/brand/sygnet";
 // sidebar nav config
 import navigation from "../_nav";
 import CustomImage from "./CustomImage";
+import Images from "../Images";
 
 const AppSidebar = () => {
   const dispatch = useDispatch();
@@ -39,7 +40,7 @@ const AppSidebar = () => {
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
           <CustomImage
-            src={"src/assets/brand/logo.png"}
+            src={Images["logo"]}
             alt="Company Logo"
             height={32}
             width={115}
